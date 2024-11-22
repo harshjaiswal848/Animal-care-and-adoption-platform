@@ -1,0 +1,70 @@
+package com.devmountain.shelter.disposition;
+
+
+import com.devmountain.shelter.animal.Animal;
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Table(name = "disposition")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Disposition {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Long id;
+
+    @Column
+    public String potty;
+
+    @Column
+    public String leash;
+
+    @Column
+    public String kids;
+
+    @Column
+    public String otherAnimals;
+
+    @Column
+    public String temper;
+
+    @Column
+    public String crate;
+
+    @Column(columnDefinition = "varchar(500)")
+    public String comments;
+
+    @OneToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "animal_id")
+    private Animal animal;
+
+
+    public Disposition (DispositionDto dispositionDto){
+        if (dispositionDto.getPotty() != null) {
+            this.potty = dispositionDto.getPotty();
+        }
+        if (dispositionDto.getLeash() != null) {
+            this.leash = dispositionDto.getLeash();
+        }
+        if (dispositionDto.getKids() != null) {
+            this.kids = dispositionDto.getKids();
+        }
+        if (dispositionDto.getOtherAnimals() != null) {
+            this.otherAnimals = dispositionDto.getOtherAnimals();
+        }
+        if (dispositionDto.getTemper() != null) {
+            this.temper = dispositionDto.getTemper();
+        }
+        if (dispositionDto.getCrate() != null) {
+            this.crate = dispositionDto.getCrate();
+        }
+        if (dispositionDto.getComments() != null) {
+            this.comments = dispositionDto.getComments();
+        }
+
+    }
+
+}
