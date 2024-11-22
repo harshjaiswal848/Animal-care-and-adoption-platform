@@ -20,7 +20,6 @@ This app has been designed to help manage the day-to-day operations of an animal
 ## Features
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[:tv: Click here to watch the walk-through video](https://youtu.be/KwknAXhYQzI)
 
 ### Dashboard
 * User can see their pending tasks for the week, along with their deadline and a button to mark them as completed. 
@@ -103,16 +102,16 @@ Run the following command to verify your install:
 $ java --version
 ```
 ### Installation
-* Copy the [URL](https://github.com/GRISONRF/shelter.git) for the repository 
+* Copy the [URL](https://github.com/harshjaiswal848/Animal-care-and-adoption-platform.git) for the repository 
 * Open **Terminal**
 * Change the current working directory to the location where you want the cloned directory.
 * Type git clone, and then paste the URL you copied earlier.
    ```sh
-   git clone https://github.com/GRISONRF/shelter.git
+   git clone https://github.com/harshjaiswal848/Animal-care-and-adoption-platform.git
    ```
 * Press **Enter** to create your local clone.
 ```shell
-$ git clone https://github.com/GRISONRF/shelter.git
+$ git clone https://github.com/harshjaiswal848/Animal-care-and-adoption-platform.git
 > Cloning into `CoolProject`...
 > remote: Counting objects: 52, done.
 > remote: Compressing objects: 100% (50/50), done.
@@ -125,6 +124,4 @@ $ git clone https://github.com/GRISONRF/shelter.git
 
 ## About the Author
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-Rafaela completed a comprehensive full-stack bootcamp in the previous year, where she gained in-depth knowledge of several technologies, including Python, Flask, React, and Data Manipulation. <br>
-Following her bootcamp, she continued her pursuit of knowledge by contributing her expertise to various open-source projects, and volunteered to HackforLA and Out in Tech, collaborating with fellow software engineers and exploring different tech stacks.<br>
-In 2023, she embarked on a new journey to acquire proficiency in Java, and the Walmart vs. Hackbright bootcamp provided the necessary impetus to achieve this objective!
+We are the students of Galgotias University created this app.
