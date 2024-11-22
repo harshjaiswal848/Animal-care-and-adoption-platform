@@ -26,16 +26,14 @@ This app has been designed to help manage the day-to-day operations of an animal
 * They can also see a list of notes with the option to delete and create new ones.
 * Using Chart.js, current stats of the shelter are displayed, showing the number of animals, their species, and their availability.
 
-https://user-images.githubusercontent.com/81582376/220479408-ad699ce5-e52c-4184-82e9-17ab0a7d8e1a.mp4
-
+ 
 
 ### Tasks
 * Clicking on "add task" allows the user to create a new task by picking the staff, task description, and the deadline.
 * Whenever the task is created, the person assigned to it gets a notification on their email containing the important information about the task. Feature implemented using JavaMailSender.
 * On the tasks page, the user can see all the pending tasks, and they can delete the task when it's complete, which is also updated on the user's dashboard.
 
-https://user-images.githubusercontent.com/81582376/220480844-0a6d959e-c83b-45dd-a239-b7efb04f7f3a.mp4
-
+ 
 
 ### Animals
 * JavaScript script fetches all the animals from a REST API and creates animal cards for each animal in the list.
@@ -44,14 +42,12 @@ https://user-images.githubusercontent.com/81582376/220480844-0a6d959e-c83b-45dd-
 * Using Cloudinary API, the user can upload a picture of the animal.
 * Using Thymeleaf as a template engine, user can see everything about any particular animal by clicking on its name.
 
-https://user-images.githubusercontent.com/81582376/220480886-742366d2-dcf7-44e8-9773-2990b53812c7.mp4
-
+ 
 
 ### Staff
 * On the staff page, the user can see the information about the staff, add new staff members, and delete them.
 
-https://user-images.githubusercontent.com/81582376/220480909-c83eb7d8-a992-4a54-a34c-2bc89d8bf5a8.mp4
-
+ 
 ## Improvements
 Some improvements I am currently actively working on:
 - Making the Frontend fully accessible, including: Use of semantic HTML tags, use ARIA roles and attributes, providing keyboard access for all interactive elements, providing alternative text for images, changing button/items colors for better contrasts.
