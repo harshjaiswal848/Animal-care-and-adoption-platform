@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <link rel="stylesheet" href="../animal-profile.css" type="text/css">
+
+<!--
+    <link rel="stylesheet" href="animal/animals.css" type="text/css">
+-->
+
+    <title>Animal Profile</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/flower.png" style="height: 90px;">
+
+        <nav>
+            <ul>
+                <li><a href="../staff/dashboard?staffId=5">Dashboard</a></li>
+                <li><a href="../animal/animals.html">Animals</a></li>
+                <li><a href="../staff/all-staff.html">Staff</a></li>
+                <li><a href="../task/tasks.html">Tasks</a></li>
+                <li><a class="logout-btn" style="padding-left: 173px" href="../login.html" onclick="handleLogout()
+                                ">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="title-header">
+        <span class="page-title" th:text="${animal.name}"></span>
+    </div>
+
+    <main>
+<!--        <h1 th:text="${animal.name}"></h1>-->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img th:attr="src=${animal.picture}" class="img-fluid" alt="Animal Profile Picture">
+                </div>
+                <div class="col-sm-8">
+                    <div class="div1">
+                        <p>Name:</p>
+                        <p th:text="${animal.name}"></p>
+                    </div>
+                    <div class="div2">
+                        <p>Specie:</p>
+                        <p th:text="${animal.species}"></p>
+                    </div>
+                    <div class="div3">
+                        <p>Gender:</p>
+                        <p th:text="${animal.gender}"></p>
+                    </div>
+                    <div class="div4">
+                        <p>Date of Birth:</p>
+                        <p th:text="${animal.dob}"></p>
+                    </div>
+                    <div>
+                        <button style="
+                        margin: 20px;
+                        background-color: #f8f9fa;
+                        color: #cbab3c;
+                        font-size: medium;
+                        border-color: #f8f9fa;">Edit Animal</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Intake Date</th>
+                <th>Intake Method</th>
+                <th>Breed</th>
+                <th>Food</th>
+                <th>Food Amount</th>
+                <th>Availability</th>
+            </tr>
+            <tr>
+                <td th:text="${animal.intakeDate}"></td>
+                <td th:text="${animal.intakeMethod}"></td>
+                <td th:text="${animal.breed}"></td>
+                <td th:text="${animal.food}"></td>
+                <td th:text="${animal.food_amount}"></td>
+                <td th:text="${animal.availability}"></td>
+            </tr>
+        </table>
+        <div class="table-group">
+            <table class="col-md-6">
+                <tr>
+                    <td style="background-color: #f2f2f2;"><b>Potty Trained?</b></td>
+                    <td th:text="${disposition.potty}"></td>
+<!--                    <td th:text="${animal.disposition?.potty}"></td>-->
+                </tr>
+                <tr>
+                    <td style="background-color: #f2f2f2;"><b>Leash Reactive?</b></td>
+                    <td th:text="${disposition.leash}"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #f2f2f2;"><b>Good With Kids?</b></td>
+                    <td th:text="${disposition.kids}"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #f2f2f2;"><b>Good With Other Animals?</b></td>
+                    <td th:text="${disposition.otherAnimals}"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #f2f2f2;"><b>Temper:</b></td>
+                    <td th:text="${disposition.temper}"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #f2f2f2;"><b>Crate Trained?</b></td>
+                    <td th:text="${disposition.crate}"></td>
+                </tr>
+            </table>
+            <table class="col-md-6">
+                <tr>
+                    <th style="padding: 1px;">Additional Comments:</th>
+                </tr>
+                <tr>
+                    <td th:text="${disposition.comments}"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-group" style="display: flex; justify-content: center;">
+            <table>
+                <tr>
+                    <th>Spayed</th>
+                    <th>Stool</th>
+                    <th>Weight</th>
+                    <th>Allergy</th>
+                    <th>Disabilities</th>
+                    <th>Quarantine</th>
+                    <th>Medical Rest</th>
+                </tr>
+                <tr>
+                    <td th:text="${health.spayed}"></td>
+                    <td th:text="${health.stool}"></td>
+                    <td th:text="${health.weight}"></td>
+                    <td th:text="${health.allergy}"></td>
+                    <td th:text="${health.disability}"></td>
+                    <td th:text="${health.quarantine}"></td>
+                    <td th:text="${health.medicalRest}"></td>
+                </tr>
+            </table>
+        </div>
+
+
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <link rel="stylesheet" href="./task.css" type="text/css">
+
+    <title>All Tasks</title>
+</head>
+<body>
+<div class="header">
+    <img src="../images/flower.png" style="height: 90px;">
+
+    <nav>
+        <ul>
+            <li><a href="../staff/dashboard?staffId=5">Dashboard</a></li>
+            <li><a href="../animal/animals.html">Animals</a></li>
+            <li><a href="../staff/all-staff.html">Staff</a></li>
+            <li><a href="../task/tasks.html">Tasks</a></li>
+            <li><a class="logout-btn" style="padding-left: 173px" href="../login.html" onclick="handleLogout()">Logout</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="title-header">
+    <span class="page-title">Tasks</span>
+</div>
+
+<div class="content">
+    <div class="button-container">
+        <div>
+            <button type="submit" id="add-task-btn" class="add-task-btn" class="button" style="
+                    margin: 30px;
+                    background-color: #f8f9fa;
+                    color: #cbab3c;
+                    font-size: medium;
+                    border-color: #f8f9fa;
+                ">Add New Task</button>
+        </div>
+    </div>
+
+    <div class="task-card-header">
+        <ul>
+            <li style="width: 160px; text-decoration: underline">Name</li>
+            <li style="width: 324px; text-decoration: underline">Task</li>
+            <li style="width: 160px; text-decoration: underline">When</li>
+        </ul>
+    </div>
+</div>
+
+<div id="task-container" class="container-fluid"></div>
+<br><br><br><br><br>
+
+<script src="tasks.js" type="application/javascript"></script>
+</body>
+</html>
