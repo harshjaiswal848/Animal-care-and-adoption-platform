@@ -120,4 +120,8 @@ $ git clone https://github.com/harshjaiswal848/Animal-care-and-adoption-platform
 
 ## About the Author
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<<<<<<< Updated upstream
 We are the students of Galgotias University created this app.
+=======
+WE
+>>>>>>> Stashed changes
