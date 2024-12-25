@@ -18,23 +18,23 @@ public class AnimalServiceTest {
     @Autowired
     private AnimalService animalService;
 
-//    @Test
-//    public void testGetAllAnimals() {
-//        List<AnimalDto> animals = animalService.findAllAnimals();
-//        assertThat(animals).isNotEmpty();
-//    }
+    @Test
+    public void testGetAllAnimals() {
+        List<AnimalDto> animals = animalService.findAllAnimals();
+        assertThat(animals).isNotEmpty();
+    }
 
-//    @Test
-//    public void testGetAnimalById() {
-//        Animal animal = animalService.getAnimalById(1L);
-//        assertThat(animal).isNotNull();
-//        assertThat(animal.getId()).isEqualTo(1L);
-//    }
+    @Test
+    public void testGetAnimalById() {
+        Animal animal = animalService.getAnimalById(1L);
+        assertThat(animal).isNotNull();
+        assertThat(animal.getId()).isEqualTo(1L);
+    }
 
 
-    /*
-    * @Test
-public void testAddMultipleAnimals() {
+    
+    @Test
+    public void testAddMultipleAnimals() {
     AnimalDto animal1 = new AnimalDto();
     animal1.setName("Animal 1");
     animal1.setSpecies("Species 1");
@@ -56,7 +56,7 @@ public void testAddMultipleAnimals() {
     List<Animal> savedAnimals = animalRepository.findAll();
     assertThat(savedAnimals).hasSize(10);
 }
-}*/
+}
 
 
 
