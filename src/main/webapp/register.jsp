@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>User Registration</h2>
-    <form action="UserServlet" method="post">
+    <form action="AnimalCareServlet" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
         <label for="email">Email:</label>
