@@ -1,10 +1,9 @@
-#---------> Animal Care and Adoption Platform <---------#
-
+# Animal Care and Adoption Platform
 
 This project is designed to assist animal shelters in managing daily operations, ensuring animals receive proper care, staff tasks are efficiently assigned, and records are meticulously maintained.
 
 # Table of Contents
-a) Technologies Used
+a) Technologies Used 
 b) Features
 c) Setup Instructions
 d) About the Author
@@ -14,7 +13,7 @@ i)  Backend: Java, Spring Boot, Hibernate, PostgreSQL
 ii) Frontend: JavaScript, Thymeleaf, Bootstrap, HTML, CSS
 iii) APIs: Cloudinary API, Java Mail Sender
 
-#-------> Features <--------#
+# Features 
 ## Dashboard ##
 a) Task Management: Users can view their pending tasks for the week, along with deadlines and options to mark them as completed.
 b) Notes: Users can create and delete personal notes.
