@@ -115,12 +115,16 @@ $ git clone https://github.com/harshjaiswal848/Animal-care-and-adoption-platform
 > Unpacking objects: 100% (52/52), done.
 ```
 
+```shell
+$ Navigate to the Project Directory: cd Animal-care-and-adoption-platform
+Build the project using Maven: mvn clean install
+Run the Spring Boot application: mvn spring-boot:run
 
-
+```
 
 ## About the Author
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<<<<<<< Updated upstream
+
 This project is maintained by WildTech Team. For any inquiries or contributions, please refer to the repository's contact information.
-=======
->>>>>>> Stashed changes
+
+
