@@ -116,9 +116,10 @@ $ git clone https://github.com/harshjaiswal848/Animal-care-and-adoption-platform
 ```
 
 ```shell
-$ Navigate to the Project Directory: cd Animal-care-and-adoption-platform
-Build the project using Maven: mvn clean install
-Run the Spring Boot application: mvn spring-boot:run
+$ Setup Instructions
+> Navigate to the Project Directory: cd Animal-care-and-adoption-platform
+> Build the project using Maven: mvn clean install
+> Run the Spring Boot application: mvn spring-boot:run
 
 ```
 
